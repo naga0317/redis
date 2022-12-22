@@ -1,0 +1,28 @@
+installation:- 
+
+sudo apt-get update
+
+sudo apt install redis
+
+redis-cli --version
+
+sudo systemctl status redis
+
+sudo vim /etc/redis/redis.conf
+
+change the ip like:  bind 70.25.220.238 70.25.220.239
+
+
+
+Compilation :-
+
+gcc -o test test.c -I /usr/local/include/hiredis -lhiredis
+
+export LD_LIBRARY_PATH=/usr/local/lib
+
+
+
+
+
+Reference :- 
+https://www.hostinger.com/tutorials/how-to-install-and-setup-redis-on-ubuntu/
